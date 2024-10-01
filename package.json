@@ -26,3 +26,8 @@
     "mocha": "*"
   }
 }
+{
+  "scripts": {
+    "lint": "eslint ."
+  }
+}
