@@ -22,7 +22,7 @@ jobs:
         with:
           node-version: 20
       - name: Install Dependencies
-        run: npm install
+        run: npm install 
       - name: Unit Testing
         run: npm test
       - name: Archive Test Result
