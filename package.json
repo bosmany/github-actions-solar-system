@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node app.js",
     "test": "mocha app-test.js --timeout 10000 --reporter mocha-junit-reporter --exit",
-    "coverage": "nyc --reporter cobertura --reporter lcov --reporter text --reporter json-summary  mocha app-test.js --timeout 10000  --exit"
+    "coverage": "nyc --reporter cobertura --reporter lcov --reporter text --reporter json-summary mocha app-test.js --timeout 10000 --exit",
+    "lint": "eslint ."  // Merged lint into the existing scripts section
   },
   "nyc": {
     "check-coverage": true,
@@ -23,11 +24,7 @@
   "devDependencies": {
     "chai": "*",
     "chai-http": "*",
-    "mocha": "*"
-  }
-}
-{
-  "scripts": {
-    "lint": "eslint ."
+    "mocha": "*",
+    "eslint": "*"  // eslint is now included in devDependencies
   }
 }
